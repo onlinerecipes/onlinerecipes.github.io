@@ -2586,6 +2586,14 @@ h1 {
   font-weight: bold;
   display: inline-block; }
 
+h2 {
+  font-size: 2.6rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.3rem;
+  position: relative;
+  font-family: var(--font-family);
+  font-weight: 600; }
+
 p {
   font-size: 1.6rem; }
 
