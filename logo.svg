@@ -1,24 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1058" height="725" viewBox="0 0 1058 725">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1058" height="888" viewBox="0 0 1058 888">
   <defs>
     <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#f8c417"/>
       <stop offset="1" stop-color="#e61972"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="0.449" y1="0.142" x2="0.619" y2="0.609" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-opacity="0.247"/>
-      <stop offset="1" stop-opacity="0.047"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient-3" x1="0.209" y1="0" x2="0.877" y2="0.905" xlink:href="#linear-gradient-2"/>
-    <linearGradient id="linear-gradient-4" x1="0.329" y1="0.328" x2="0.541" y2="0.711" xlink:href="#linear-gradient-2"/>
   </defs>
-  <g id="logo" transform="translate(91 62)">
+  <g id="logo" transform="translate(91 144)">
     <rect id="backround" width="1058" height="725" rx="107" transform="translate(-91 -62)" fill="url(#linear-gradient)"/>
-    <g id="Groupe_1" data-name="Groupe 1" transform="translate(27 -3)">
-      <path id="horizantal-rectangle-shadow" d="M300.889,197.61H88.955L0,43.536l.1-.056a14.954,14.954,0,0,0,13.337,8.13h162a15.017,15.017,0,0,0,15-15v-26A14.937,14.937,0,0,0,186.314.281L186.8,0l114.09,197.61h0Z" transform="translate(431.995 465.391)" fill="url(#linear-gradient-2)"/>
-      <path id="arrow-shadow-1" d="M117.584,203.683,0,.022.038,0A14.992,14.992,0,0,0,2.75,3.7l157.41,157.41-42.575,42.575h0Z" transform="translate(191.933 142.065)" fill="url(#linear-gradient-3)"/>
-      <path id="arrow-shadow-2" d="M333.062,540.05h-221.9L1.288,349.734l.286-.166a14.882,14.882,0,0,0,3.526,5.57l35.356,35.355a15,15,0,0,0,21.213,0l193.04-193.04-.078-.078,9.625-9.625a15.028,15.028,0,0,0,2.719-17.5l.026-.014L396.221,394.05H257.544a14.954,14.954,0,0,1-13.337-8.13l-.1.056L333.062,540.05v0h0ZM2.93,18.116h0A15.06,15.06,0,0,1,.89,4.094,14.857,14.857,0,0,1,3.458-.377a15.036,15.036,0,0,0-.526,18.492Z" transform="translate(188.694 122.95)" fill="url(#linear-gradient-4)"/>
-      <path id="arrow" d="M40.456,431.643,5.1,396.288a15,15,0,0,1,0-21.214l156.7-156.7L4.393,60.962a15,15,0,0,1,0-21.213L39.749,4.393a15,15,0,0,1,21.213,0L264.255,207.687a15,15,0,0,1,0,21.213l-9.625,9.625.078.078L61.669,431.643a15,15,0,0,1-21.213,0Z" transform="translate(189.732 81.801)" fill="#fff"/>
-      <rect id="horizantal-rectangle" width="192" height="56" rx="15" transform="translate(431.621 462)" fill="#fff"/>
-    </g>
+    <rect id="backround-2" data-name="backround" width="1058" height="888" rx="107" transform="translate(-91 -144)" fill="none"/>
+    <path id="Exclusion_16" data-name="Exclusion 16" d="M-13751,81.882h0C-13780.9,68.612-13826.278,61-13875.5,61c-46.121,0-89.678,6.843-119.5,18.773v-29C-13965.18,38.844-13921.623,32-13875.5,32c49.222,0,94.6,7.611,124.5,20.881v29Zm0-196.88h-244v-29h244v29Z" transform="translate(14315 430)" fill="#fff"/>
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="85.5" cy="79" rx="85.5" ry="79" transform="translate(235 156)" fill="#fff"/>
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="101" cy="111" rx="101" ry="111" transform="translate(339 76)" fill="#fff"/>
+    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="97" cy="87.5" rx="97" ry="87.5" transform="translate(455 156)" fill="#fff"/>
+    <path id="Soustraction_4" data-name="Soustraction 4" d="M-13714,52.883v0C-13743.9,39.611-13789.276,32-13838.5,32c-46.118,0-89.674,6.843-119.5,18.775V-144h244V52.883Z" transform="translate(14278 400)" fill="#fff"/>
   </g>
 </svg>
