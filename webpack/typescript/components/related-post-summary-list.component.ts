@@ -1,4 +1,5 @@
 import { ArrayUtils } from '../../utils/array-utils';
+import { PostSummary } from '../models/post-summary.model';
 import { BaseStaticHtmlComponent } from './component.interface';
 import { RelatedPostSummaryHtmlComponent } from './related-post-summary.component';
 
@@ -21,11 +22,9 @@ export class RelatedPostSummaryListHtmlComponent extends BaseStaticHtmlComponent
     let res = '';
     const currentUrl = window.location.pathname.replace('.html', '');
     ArrayUtils.shuffle(window.jekyll.posts)
-      .filter((p) => p.url != currentUrl)
+      .filter((p: PostSummary) => p.url != currentUrl)
       .slice(0, 5)
-      .forEach((post) => {
-        res += new RelatedPostSummaryHtmlComponent(post).toHtml();
-      });
+      .forEach((p: PostSummary) => (res += new RelatedPostSummaryHtmlComponent(p).toHtml()));
     return res;
   }
 }

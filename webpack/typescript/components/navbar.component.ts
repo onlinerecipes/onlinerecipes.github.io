@@ -32,7 +32,7 @@ export class NavbarHtmlComponent extends BaseHtmlComponent {
           <div class='left'>
             <a href='/'>
               <img src='/assets/logo.png' alt='logo' />
-              <span>DEV Knowledge</span>
+              <span>Online Recipes</span>
             </a>
           </div>
           <div class='right'>
