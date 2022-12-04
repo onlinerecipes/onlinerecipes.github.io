@@ -1,0 +1,84 @@
+@import 'mixin';
+
+.tab-links {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--tab-links-background-color);
+  color: var(--tab-links-color);
+  transition: var(--transition);
+  transition-property: color, background-color, border-color;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.1rem;
+    background-color: var(--background-color-04);
+  }
+}
+
+.tab-links button {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--tab-links-background-color);
+  color: var(--tab-links-color);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.4rem 1.8rem;
+  font-size: 1.6rem;
+  transition: var(--transition);
+  transition-property: color, background-color, border-color;
+  font-weight: 500;
+}
+
+.tab-links button:hover {
+  background-color: var(--tab-link-background-color-on-hover);
+}
+
+.tab-links button.active {
+  color: var(--active-tab-link-color);
+  position: relative;
+}
+
+.tab-links button.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.3rem;
+  background-color: var(--active-tab-link-color);
+  z-index: 10;
+}
+
+.tab-content-wrapper {
+  overflow: auto;
+  max-height: 50rem;
+  margin-bottom: 1.6rem;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &:hover::-webkit-scrollbar {
+    display: initial;
+  }
+}
+
+/* Style the tab content */
+.tab-content {
+  display: none;
+}
+
+.tab-content-wrapper img {
+  margin-top: 0;
+  max-height: 45rem;
+}

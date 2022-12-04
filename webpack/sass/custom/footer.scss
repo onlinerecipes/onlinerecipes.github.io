@@ -1,0 +1,52 @@
+footer {
+  margin-top: 4rem;
+  background-color: var(--background-color-01);
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  & .logo {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    & img {
+      height: 1.7rem;
+    }
+
+    & span {
+      margin-left: 1rem;
+      font-weight: 600;
+      font-size: 1.45rem;
+      color: var(--text-color-01);
+    }
+  }
+
+  & .links {
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+
+    & a {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--text-color-04);
+      transition: var(--transition);
+      transition-property: color, background-color;
+
+      &:hover {
+        color: var(--text-color-02);
+        text-decoration: none;
+      }
+    }
+  }
+
+  & .all-right-reserved {
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin: 0.8rem 0 0;
+  }
+}

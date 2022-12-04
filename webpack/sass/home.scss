@@ -1,0 +1,26 @@
+@import 'vendor/fonts';
+@import 'custom/colors';
+@import 'custom/constants';
+@import 'custom/base';
+@import 'custom/tags-categories';
+@import 'custom/post-summary';
+@import 'custom/welcome-message';
+@import 'custom/posts-search';
+@import 'custom/home-posts';
+@import 'custom/footer';
+@import 'custom/navbar';
+@import 'custom/cookies-consentement';
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+#OPEN_ADVANCED_SEARCH_PANEL_BUTTON_ID {
+  display: none;
+}

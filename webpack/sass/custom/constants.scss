@@ -1,0 +1,117 @@
+:root {
+  --transition: all 0.15s ease-in-out;
+  --navbar-height: 6.5rem;
+  --code-padding-top: 1.5rem;
+  --code-padding-bottom: 1.5rem;
+  --code-line-height: 1.45;
+  --code-font-size: 1.5rem;
+  --border-radius: 0.3rem;
+  --main-max-width: 2000px;
+  --post-summary-max-width: 42rem;
+
+  @media screen and (max-width: 426px) {
+    --navbar-height: 8rem;
+    --post-summary-max-width: initial;
+    --site-name-font-size: 2.5rem;
+    --post-summary-list-margin-top: 4.5rem;
+    --post-summary-grid-gap: 3rem;
+    --main-width: 90%;
+    --font-size: 48%;
+    --post-summary-columns: 1;
+    --post-padding: 5rem 4rem 4rem;
+    --post-margin: 0;
+    --post-title-font-size: 6rem;
+    --post-additional-info-margin-top: 5rem;
+    --welcome-message-margin-top: 5rem;
+    --search-input-margin-top: 4rem;
+    --comments-margin: 3rem 0;
+    --comments-join-discussion-margin-bottom: 3rem;
+    --footer-margin-top: 4rem;
+    --footer-padding: 2rem 3rem;
+    --footer-icon-font-size: 2rem;
+  }
+
+  @media screen and (min-width: 427px) and (max-width: 768px) {
+    --navbar-height: 8rem;
+    --site-name-font-size: 2.8rem;
+    --post-summary-list-margin-top: 6rem;
+    --post-summary-grid-gap: 2rem;
+    --main-width: 85%;
+    --font-size: 52%;
+    --post-summary-columns: 2;
+    --post-padding: 5rem;
+    --post-margin: 3rem auto;
+    --post-title-font-size: 7rem;
+    --post-additional-info-margin-top: 5rem;
+    --welcome-message-margin-top: 5rem;
+    --search-input-margin-top: 4rem;
+    --comments-margin: 3rem 0;
+    --comments-join-discussion-margin-bottom: 3rem;
+    --footer-margin-top: 6rem;
+    --footer-padding: 2.5rem 5rem;
+    --footer-icon-font-size: 2rem;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    --site-name-font-size: 3.2rem;
+    --post-max-width: 100rem;
+    --post-summary-list-margin-top: 8rem;
+    --post-summary-grid-gap: 2rem;
+    --main-width: 80%;
+    --font-size: 58%;
+    --post-summary-columns: 3;
+    --post-padding: 6rem;
+    --post-margin: 4rem auto;
+    --post-title-font-size: 8rem;
+    --post-additional-info-margin-top: 6rem;
+    --welcome-message-margin-top: 6rem;
+    --search-input-margin-top: 5rem;
+    --comments-margin: 5rem 0;
+    --comments-join-discussion-margin-bottom: 5rem;
+    --footer-margin-top: 12rem;
+    --footer-padding: 3rem 8rem;
+    --footer-icon-font-size: 2.5rem;
+  }
+
+  @media screen and (min-width: 1025px) and (max-width: 1920px) {
+    --site-name-font-size: 3.5rem;
+    --post-max-width: 100rem;
+    --post-summary-list-margin-top: 9rem;
+    --post-summary-grid-gap: 2rem;
+    --main-width: 80%;
+    --font-size: 62.5%;
+    --post-summary-columns: 3;
+    --post-padding: 8rem;
+    --post-margin: 4rem auto;
+    --post-title-font-size: 9rem;
+    --post-additional-info-margin-top: 6rem;
+    --welcome-message-margin-top: 6rem;
+    --search-input-margin-top: 5rem;
+    --comments-margin: 5rem 0;
+    --comments-join-discussion-margin-bottom: 5rem;
+    --footer-margin-top: 12rem;
+    --footer-padding: 3rem 8rem;
+    --footer-icon-font-size: 2.5rem;
+  }
+
+  @media screen and (min-width: 1921px) {
+    --site-name-font-size: 3.5rem;
+    --post-max-width: 125rem;
+    --post-summary-list-margin-top: 10rem;
+    --post-summary-grid-gap: 2rem;
+    --main-width: 80%;
+    --font-size: 62.5%;
+    --post-summary-columns: 4;
+    --post-padding: 8rem;
+    --post-margin: 4rem auto;
+    --post-title-font-size: 10rem;
+    --post-additional-info-margin-top: 6rem;
+    --welcome-message-margin-top: 10rem;
+    --search-input-margin-top: 5rem;
+    --comments-margin: 7rem 0;
+    --comments-join-discussion-margin-bottom: 6rem;
+    --footer-margin-top: 16rem;
+    --footer-padding: 3rem 8rem;
+    --footer-icon-font-size: 2.5rem;
+  }
+}

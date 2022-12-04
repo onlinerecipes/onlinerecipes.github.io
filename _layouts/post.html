@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<head>
+  <title>DEV Knowledge | {{ page.title }}</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ page.excerpt }}">
+  {% if page.keywords %}
+  <meta content='keywords' content="{{ page.keywords }}"/>
+  {% endif %}
+  <link rel="shortcut icon" type="image/png" href="/logo.svg" />
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <style>{% include webpack/post-bundle.css %}</style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2977387363618260" crossorigin="anonymous"></script>
+</head>
+<body>
+  <script>window.startTime = new Date().getTime();</script>
+  <style>.loader {z-index: 10000000000;margin-top: -200px;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background-color: #f3f2ef;display: flex;align-items: center;justify-content: center;flex-direction: column;}.loader-logo {width: 50px;margin-bottom: 20px;}.loading-bar {width: 130px;height: 4px;border-radius: 100rem;background-color: #d6cec2;position: relative;overflow: hidden;}.moving-loading-bar {height: 100%;width: 68px;position: absolute;border-radius: 100rem;background-color: #e61972;animation: initial-loading 1.5s ease infinite;}@keyframes initial-loading {0% {transform: translate(-34px);}50% {transform: translate(96px);}to {transform: translate(-34px);}}</style>
+  <div class="loader">
+    <img class="loader-logo" src="/logo.svg" alt="" />
+    <div class="loading-bar"><div class="moving-loading-bar"></div></div>
+  </div>
+  <svg height="0" width="0" style="position: absolute; z-index: -1000">
+    <defs>
+      <linearGradient id="gradient-svg-id">
+        <stop offset="0%" stop-color="#f8c417"></stop>
+        <stop offset="100%" stop-color="#e61972"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+  <style>
+    .gradient-svg {
+      fill: url(#gradient-svg-id) #f8c417;
+    }
+  </style>
+  <div id="app" class="on-loading"></div>
+  <script>
+    {% include jekyll/post.js %}
+    {% include webpack/post-bundle.js %}
+    {% include jekyll/markdown.js %}
+  </script>
+</body>

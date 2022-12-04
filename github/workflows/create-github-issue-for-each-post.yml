@@ -1,0 +1,18 @@
+name: Create github issue for each post
+on:
+  push:
+    branches:
+      - master
+jobs:
+  create-github-issue-for-each-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Create github issue for each post
+        run: |
+          random_dir=/tmp/new_posts-$RANDOM
+          mkdir $random_dir
+          git log -n1 --pretty=oneline --name-status | grep -e ^A | cut -f2 | grep _posts/ | while read new_post; do cp "$new_post" $random_dir; done
+          grep permalink $random_dir/* | cut -d' ' -f2 | while read issue_title; do echo "{\"title\": \"$issue_title\", \"body\": \"[https://devknowledge.github.io/$issue_title](https://devknowledge.github.io/$issue_title) comments\"}"; done | while read request_body; do curl -X POST 'https://api.github.com/repos/devknowledge/devknowledge.github.io/issues' --header 'Authorization: Bearer ${{ secrets.CREATE_ISSUE_TOKEN }}' --data-raw "$request_body"; done

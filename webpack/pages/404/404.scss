@@ -1,0 +1,66 @@
+@import '../../sass/post';
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+.post {
+  flex: 1;
+  margin: calc(var(--navbar-height) + 3rem) auto 0 !important;
+  box-shadow: none !important;
+  border: none;
+  width: 80%;
+  max-width: 80rem;
+}
+
+.error-code {
+  display: flex;
+  justify-content: center;
+  & span {
+    font-size: 15rem;
+    line-height: 15rem;
+    font-weight: 200;
+  }
+}
+
+.page-not-found-message,
+.page-not-found-second-message {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.page-not-found-second-message {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page-button-container {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page-button {
+  padding: 0.7rem 7.5rem;
+  transition: var(--transition);
+  transition-property: color, background-color;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  &:hover {
+    text-decoration: none;
+    background-color: var(--background-color-04);
+  }
+}

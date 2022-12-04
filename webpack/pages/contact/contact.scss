@@ -1,0 +1,39 @@
+@import '../../sass/post';
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+.post {
+  flex: 1;
+  margin: calc(var(--navbar-height) + 3rem) auto 0 !important;
+  box-shadow: none !important;
+  border: none;
+
+  & .iconify {
+    font-size: 12rem;
+    text-align: center;
+    margin: 4rem auto 0;
+    display: flex;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  margin-bottom: 2.5rem;
+  position: relative;
+  font-family: var(--font-family);
+  font-weight: bold;
+  display: inline-block;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 1.3rem;
+}
+
+a {
+  font-weight: bold;
+}

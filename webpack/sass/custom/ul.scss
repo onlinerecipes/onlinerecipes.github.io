@@ -1,0 +1,40 @@
+@import 'mixin';
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+.markdown {
+  & ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: -1rem;
+    margin-left: 1.5rem;
+  }
+
+  & ul li {
+    margin-bottom: 1rem;
+    padding-left: 2.4rem;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 1.6rem;
+    }
+
+    &:first-child {
+      margin-top: 1.3rem;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0.8rem;
+      left: 0;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 0.2rem;
+      background: var(--linear-background);
+    }
+  }
+
+  & ul li p:last-child {
+    margin-bottom: 0;
+  }
+}
